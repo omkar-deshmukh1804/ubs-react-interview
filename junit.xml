@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="5" errors="0" time="2.801">
-  <testsuite name="Hacker Dormitory" errors="0" failures="5" skipped="0" timestamp="2024-05-12T12:46:45" time="2.069" tests="6">
-    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.156">
+<testsuites name="jest tests" tests="6" failures="3" errors="0" time="2.762">
+  <testsuite name="Hacker Dormitory" errors="0" failures="3" skipped="0" timestamp="2024-05-12T12:48:08" time="1.968" tests="6">
+    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.14">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;adam&quot;
@@ -26,9 +26,9 @@ Received: &quot;dhilip&quot;
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should add valid students without case sensitivity" name="Hacker Dormitory should add valid students without case sensitivity" time="0.023">
+    <testcase classname="Hacker Dormitory should add valid students without case sensitivity" name="Hacker Dormitory should add valid students without case sensitivity" time="0.025">
     </testcase>
-    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.022">
+    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.031">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;&quot;
@@ -53,62 +53,16 @@ Received: &quot;Adam&quot;
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.039">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: &quot;Sorry, Anderson is not a verified student!&quot;
-Received: &quot;Sorry Anderson is not a verified student!&quot;
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:69:31)
-    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
-    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
-    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
-    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
-    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
-    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
-    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
-    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
-    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
-    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
-    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
-    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.037">
     </testcase>
-    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.021">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: &quot;Sorry, Bonnie&apos;s validity has Expired!&quot;
-Received: &quot;Sorry Bonnie&apos;s validity has Expired!&quot;
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:83:31)
-    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
-    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
-    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
-    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
-    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
-    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
-    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
-    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
-    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
-    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
-    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
-    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.023">
     </testcase>
-    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.044">
+    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.053">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
-Expected: &quot;Sorry, Talisk&apos;s validity has Expired!&quot;
-Received: &quot;Sorry Talisk&apos;s validity has Expired!&quot;
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:101:31)
+Expected: &quot;adam&quot;
+Received: &quot;talisk&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:114:56)
     at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
