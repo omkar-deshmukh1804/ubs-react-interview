@@ -30,7 +30,7 @@ function Search() {
 			console.log(test)
 			if(!test){
 				setErrorStatus(true)
-				setErrorMessage(`Sorry ${userInputName}'s validity has Expired!`)
+				setErrorMessage(`Sorry, ${userInputName}'s validity has Expired!`)
 			}
 			else{
 				setResidenceList((prevValue) => [inputName, ...prevValue])
@@ -41,7 +41,7 @@ function Search() {
 		}
 		else{
 			setErrorStatus(true)
-			setErrorMessage(`Sorry ${userInputName} is not a verified student!`)
+			setErrorMessage(`Sorry, ${userInputName} is not a verified student!`)
 		}
 	}
 	
